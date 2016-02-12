@@ -9,7 +9,7 @@ RUN dnf install -y git
 RUN dnf install -y wget
 RUN dnf install -y spawn
 RUN dnf install -y expect
-RUN git clone https://github.com/ideal-postcodes/postcodes.io.git /root/postcodes
+RUN git clone https://github.com/Whoooop/postcodes.io.git /root/postcodes
 RUN cd /root/postcodes; npm install
 ADD setup.sh /root/postcodes/setup.sh
 RUN chmod +x /root/postcodes/setup.sh
